@@ -5,6 +5,8 @@
     "headline": "London + Dublin notes",
     "when": "September 2026",
     "londonNights": "Wed 16 Sep – Fri 18 Sep 2026",
+    "stayBudget": "Stay budget under $800 total for those two nights. Nothing booked.",
+    "stayOverBudget": "Hazlitt’s and Resident Soho were over the $800 cap — listed as Maybe, not quotes.",
     "held": "Flight to London already held for 15 Sep.",
     "disclaimer": "Guide only — do not book or pay from this site."
   },
@@ -137,14 +139,130 @@
       "city": "London",
       "neighborhood": "Covent Garden",
       "activity": "Stay",
-      "address": "4 Broad Court, Covent Garden",
-      "description": "Small townhouse opposite Royal Opera House; nicer option under ~$800 for 16–18 Sep. Skip room 43 (no window).",
-      "note": "Google Hotels showed $622 total with taxes as of 8 Sep 2026; recheck before booking. Not reserved — suggested / unbooked only.",
+      "address": "4 Broad Court, Covent Garden WC2B 5QZ",
+      "description": "Small townhouse opposite the Royal Opera House. Skip room 43 (no window). Google 4.1/5 (387 reviews); Booking about 8.2.",
+      "note": "Price snapshot checked ~8 Sep 2026: Google Hotels about $622 total with taxes for Wed 16 Sep–Fri 18 Sep 2026. Recheck before booking. Not booked.",
       "status": "suggested",
       "links": [
         {
           "label": "Official",
           "url": "https://www.thefieldinghotel.co.uk/"
+        },
+        {
+          "label": "Booking.com",
+          "url": "https://www.booking.com/hotel/gb/fielding.html?checkin=2026-09-16&checkout=2026-09-18&group_adults=2&no_rooms=1"
+        }
+      ]
+    },
+    {
+      "id": "z-hotel-tcr",
+      "name": "The Z Hotel Tottenham Court Road",
+      "city": "London",
+      "neighborhood": "Soho",
+      "activity": "Stay",
+      "address": "52 Poland Street, Soho",
+      "description": "Compact modern Z Queen in Soho. Official flexible rate (£679) does not fit under $800.",
+      "note": "Price snapshot for Wed 16 Sep–Fri 18 Sep 2026: official prepaid non-refundable £548 taxes included (about $742). Booking.com also showed a Queen about $572 before VAT (about $686 with VAT). Recheck before booking. Not booked.",
+      "status": "suggested",
+      "links": [
+        {
+          "label": "Official",
+          "url": "https://www.thezhotels.com/hotels/tottenham-court-road/"
+        },
+        {
+          "label": "Book direct",
+          "url": "https://bookings.thezhotels.com/search-rates"
+        },
+        {
+          "label": "Booking.com",
+          "url": "https://www.booking.com/hotel/gb/z-tottenham-court-road.html?checkin=2026-09-16&checkout=2026-09-18&group_adults=2&no_rooms=1"
+        }
+      ]
+    },
+    {
+      "id": "ridgemount-hotel",
+      "name": "Ridgemount Hotel",
+      "city": "London",
+      "neighborhood": "Bloomsbury",
+      "activity": "Stay",
+      "address": "65–67 Gower Street, Bloomsbury",
+      "description": "Triple with a window, private bath, and breakfast. Score 8.6. About 15–18 min walk to Soho.",
+      "note": "Price snapshot for Wed 16 Sep–Fri 18 Sep 2026: about $628 shown / about $754 with 20% VAT. Recheck before booking. Not booked.",
+      "status": "suggested",
+      "links": [
+        {
+          "label": "Official",
+          "url": "https://ridgemounthotel.co.uk/"
+        },
+        {
+          "label": "Booking.com",
+          "url": "https://www.booking.com/hotel/gb/ridgemount-london.html?checkin=2026-09-16&checkout=2026-09-18&group_adults=2&no_rooms=1"
+        }
+      ]
+    },
+    {
+      "id": "grand-trafalgar",
+      "name": "The Grand at Trafalgar Square",
+      "city": "London",
+      "neighborhood": "Trafalgar Square",
+      "activity": "Stay",
+      "address": "8 Northumberland Avenue",
+      "description": "About 12–15 min to Soho. Same address block as Club Quarters.",
+      "note": "Price snapshot for Wed 16 Sep–Fri 18 Sep 2026: Google Hotels about $781 total with taxes. Recheck before booking. Not booked.",
+      "status": "suggested",
+      "links": [
+        {
+          "label": "Official",
+          "url": "https://www.thegrandattrafalgarsquare.com/"
+        }
+      ]
+    },
+    {
+      "id": "club-quarters-trafalgar",
+      "name": "Club Quarters Hotel, Trafalgar Square",
+      "city": "London",
+      "neighborhood": "Trafalgar Square",
+      "activity": "Stay",
+      "address": "8 Northumberland Avenue",
+      "description": "Same address block as The Grand at Trafalgar Square.",
+      "note": "Price snapshot for Wed 16 Sep–Fri 18 Sep 2026: Google Hotels about $787 total with taxes. Recheck before booking. Not booked.",
+      "status": "suggested",
+      "links": [
+        {
+          "label": "Official",
+          "url": "https://www.clubquartershotels.com/london/trafalgar-square"
+        }
+      ]
+    },
+    {
+      "id": "hazlitts",
+      "name": "Hazlitt’s",
+      "city": "London",
+      "neighborhood": "Soho",
+      "activity": "Stay",
+      "description": "Named Soho pick that came in over the $800 stay-total cap for 16–18 Sep. Not a price quote and not booked.",
+      "note": "Over budget — left as Maybe so it stays visible as a rejected option.",
+      "status": "maybe",
+      "links": [
+        {
+          "label": "Official",
+          "url": "https://www.hazlittshotel.com/"
+        }
+      ]
+    },
+    {
+      "id": "resident-soho",
+      "name": "The Resident Soho",
+      "city": "London",
+      "neighborhood": "Soho",
+      "activity": "Stay",
+      "description": "Named Soho pick that came in over the $800 stay-total cap for 16–18 Sep. Not a price quote and not booked.",
+      "note": "Over budget — left as Maybe so it stays visible as a rejected option.",
+      "status": "maybe",
+      "links": [
+        {
+          "label": "Official",
+          "url": "https://www.residenthotels.com/locations/soho"
         }
       ]
     },

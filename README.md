@@ -2,19 +2,21 @@
 
 A phone-friendly travel guide for **Billy and Isabel** — London (16–18 Sep 2026) plus Dublin notes.
 
-Open the live site: [https://billyjameshowell.github.io/trip-guide/](https://billyjameshowell.github.io/trip-guide/)
+Open the live site: [https://trip-guide-a1c.pages.dev](https://trip-guide-a1c.pages.dev)
 
 This is a guide only. Do not book or pay from the site.
 
 ## What’s here
 
 - Home page with trip overview and filters by **city** and **activity** (Bars, Food, Sights, Stay, Transport).
-- Place cards with neighborhood, a short description, tags, official/booking links, and a status: **Confirmed**, **Suggested**, **Maybe**, **Need to book**, or **Requested**.
-- All place content lives in one file: [`data/places.json`](data/places.json). The UI reads that file, so you can add cities and places without rewriting the page.
+- Place cards with neighborhood, a short description, tags, official/booking links, and a status: **Confirmed**, **Suggested**, **Maybe**, **Need to book**, **Requested**, or **Hidden**.
+- Hotel suggestions under **Stay** include dated price snapshots and booking links. Nothing is booked unless a card says so.
+- Status chips are editable on the page. Picks are stored in `localStorage` on that phone only and are not written back to `data/places.json`. Hidden places drop out of the default list; use **Show hidden** to bring them back.
+- All shared place content lives in one file: [`data/places.json`](data/places.json). The UI reads that file, so you can add cities and places without rewriting the page.
 
 ## Stack
 
-Plain HTML, CSS, and a little JavaScript. No build step. GitHub Pages serves the files as-is from the repository root.
+Plain HTML, CSS, and a little JavaScript. No build step. Cloudflare Pages (`trip-guide`) auto-deploys from `main`. GitHub Pages can also serve the repository root.
 
 ## Add a place
 
@@ -30,7 +32,7 @@ Plain HTML, CSS, and a little JavaScript. No build step. GitHub Pages serves the
   "activity": "Food",
   "address": "Optional street address",
   "description": "One or two sentences.",
-  "note": "Optional extra detail (booking caveats, room numbers, etc.)",
+  "note": "Optional extra detail (booking caveats, room numbers, dated price snapshots, etc.)",
   "status": "suggested",
   "links": [
     { "label": "Official", "url": "https://example.com" }
@@ -39,10 +41,14 @@ Plain HTML, CSS, and a little JavaScript. No build step. GitHub Pages serves the
 ```
 
 3. If the city is new, add it to the top-level `cities` array (for example `"Paris"`). New activity types can go in `activities`.
-4. Use one of these `status` values: `confirmed`, `suggested`, `maybe`, `need-to-book`, `requested`.
+4. Use one of these `status` values: `confirmed`, `suggested`, `maybe`, `need-to-book`, `requested`, `hidden`.
 5. Commit and push to `main`. Pages will pick up the change.
 
-Keep descriptions factual. Don’t invent prices or claim something is booked unless it is.
+Keep descriptions factual. Don’t invent prices or claim something is booked unless it is. Hotel prices in this guide are dated snapshots only.
+
+## Statuses on a phone
+
+Tap a place’s status chip to pick another status. **Hidden** removes that card from the default list on that device. Overrides stay in the browser (`trip-guide-status-overrides`) so two phones can each keep their own picks without a backend.
 
 ## Local preview
 
@@ -54,12 +60,7 @@ python3 -m http.server 8080
 
 Then visit [http://localhost:8080](http://localhost:8080).
 
-## GitHub Pages
+## Hosting
 
-Pages is configured to publish the **root of `main`** (not `/docs`).
-
-- Site URL: `https://billyjameshowell.github.io/trip-guide/`
-- Source: branch `main`, folder `/` (root)
-- [`.nojekyll`](.nojekyll) is included so GitHub does not run Jekyll on the static files.
-
-If the live URL 404s, a repo admin needs one Settings click: **Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch: `main` / `/ (root)` → Save**.
+- **Cloudflare Pages:** project `trip-guide`, production URL [https://trip-guide-a1c.pages.dev](https://trip-guide-a1c.pages.dev), deploys from `main`.
+- **GitHub Pages:** [https://billyjameshowell.github.io/trip-guide/](https://billyjameshowell.github.io/trip-guide/) publishes the **root of `main`** (not `/docs`). [`.nojekyll`](.nojekyll) is included so GitHub does not run Jekyll on the static files.
