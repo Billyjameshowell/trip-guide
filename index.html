@@ -25,26 +25,6 @@
     </header>
 
     <main>
-      <section class="overview" aria-labelledby="overview-heading">
-        <h2 id="overview-heading" class="visually-hidden">Trip overview</h2>
-        <div class="overview__grid" id="overview">
-          <article class="overview__card">
-            <h3>London hotel nights</h3>
-            <p id="london-nights">Wed 16 Sep – Fri 18 Sep 2026</p>
-            <p class="overview__sub" id="stay-budget">Stay budget under $800 total for those two nights. Nothing booked.</p>
-            <p class="overview__sub" id="stay-over-budget">Hazlitt’s and Resident Soho were over the $800 cap — listed as Maybe, not quotes.</p>
-          </article>
-          <article class="overview__card">
-            <h3>Already held</h3>
-            <p id="held">Flight to London already held for 15 Sep.</p>
-          </article>
-          <article class="overview__card overview__card--note">
-            <h3>This is a guide</h3>
-            <p id="disclaimer">Guide only — do not book or pay from this site.</p>
-          </article>
-        </div>
-      </section>
-
       <section class="filters" aria-labelledby="filter-heading">
         <div class="filters__inner">
           <h2 id="filter-heading">Filter</h2>
@@ -56,9 +36,8 @@
             <p class="filter-label" id="activity-filter-label">Activity</p>
             <div class="chips" id="activity-filters" role="group" aria-labelledby="activity-filter-label"></div>
           </div>
-          <div class="filter-block">
-            <p class="filter-label" id="device-filter-label">On this device</p>
-            <div class="chips" id="device-filters" role="group" aria-labelledby="device-filter-label"></div>
+          <div class="filter-block filter-block--hidden">
+            <div class="chips" id="device-filters" role="group" aria-label="Hidden places"></div>
           </div>
           <p class="result-count" id="result-count" aria-live="polite"></p>
         </div>
@@ -70,7 +49,7 @@
     </main>
 
     <footer class="site-footer">
-      <p>Add places in <code>data/places.json</code>. Status chips can be changed on this phone only — they are not written back to the guide.</p>
+      <p>Tap a status to change it. Changes stay on this phone.</p>
     </footer>
 
     <script src="js/app.js"></script>
