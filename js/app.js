@@ -22,11 +22,6 @@ const els = {
   travelers: document.getElementById("travelers"),
   title: document.getElementById("site-title"),
   headline: document.getElementById("headline"),
-  nights: document.getElementById("london-nights"),
-  stayBudget: document.getElementById("stay-budget"),
-  stayOverBudget: document.getElementById("stay-over-budget"),
-  held: document.getElementById("held"),
-  disclaimer: document.getElementById("disclaimer"),
   cityFilters: document.getElementById("city-filters"),
   activityFilters: document.getElementById("activity-filters"),
   deviceFilters: document.getElementById("device-filters"),
@@ -50,7 +45,7 @@ async function init() {
     renderFilters(state.data);
     renderPlaces();
   } catch (error) {
-    els.places.innerHTML = `<p class="error">Could not load the guide. Serve the folder over HTTP (GitHub Pages or a local static server) so <code>data/places.json</code> can load. ${escapeHtml(error.message)}</p>`;
+    els.places.innerHTML = `<p class="error">Couldn’t load places. Refresh and try again. ${escapeHtml(error.message)}</p>`;
   }
 }
 
@@ -113,11 +108,6 @@ function renderMeta(meta) {
   if (meta.headline || meta.when) {
     els.headline.textContent = [meta.headline, meta.when].filter(Boolean).join(" · ");
   }
-  if (meta.londonNights) els.nights.textContent = meta.londonNights;
-  if (meta.stayBudget && els.stayBudget) els.stayBudget.textContent = meta.stayBudget;
-  if (meta.stayOverBudget && els.stayOverBudget) els.stayOverBudget.textContent = meta.stayOverBudget;
-  if (meta.held) els.held.textContent = meta.held;
-  if (meta.disclaimer) els.disclaimer.textContent = meta.disclaimer;
 }
 
 function renderFilters(data) {
@@ -134,7 +124,7 @@ function renderFilters(data) {
   );
 
   const hiddenCount = (data.places || []).filter((place) => effectiveStatus(place) === "hidden").length;
-  const hiddenLabel = hiddenCount ? `Show hidden (${hiddenCount})` : "Show hidden";
+  const hiddenLabel = hiddenCount ? `Show hidden places (${hiddenCount})` : "Show hidden places";
   const hiddenChip = document.createElement("button");
   hiddenChip.type = "button";
   hiddenChip.className = "chip";
@@ -175,13 +165,13 @@ function renderPlaces() {
   closePicker();
   const places = visiblePlaces();
   const hiddenCount = (state.data.places || []).filter((place) => effectiveStatus(place) === "hidden").length;
-  const hiddenBit = !state.showHidden && hiddenCount ? ` · ${hiddenCount} hidden on this device` : "";
+  const hiddenBit = !state.showHidden && hiddenCount ? ` · ${hiddenCount} hidden` : "";
   els.resultCount.textContent = `${places.length} place${places.length === 1 ? "" : "s"}${hiddenBit}`;
 
   if (!places.length) {
     const empty = hiddenCount && !state.showHidden
-      ? `<p class="empty">No places match those filters. Turn on <strong>Show hidden</strong> if you hid options on this device.</p>`
-      : `<p class="empty">No places match those filters. Clear a filter or add a place in <code>data/places.json</code>.</p>`;
+      ? `<p class="empty">Nothing here. Try <strong>Show hidden places</strong>, or clear a filter.</p>`
+      : `<p class="empty">Nothing matches those filters. Clear a filter and try again.</p>`;
     els.places.innerHTML = empty;
     return;
   }
@@ -279,7 +269,7 @@ function placeCard(place) {
           aria-expanded="false"
           aria-label="Change status for ${escapeAttr(place.name)}. Current status: ${escapeAttr(statusLabel)}"
         >${escapeHtml(statusLabel)} <span class="status__caret" aria-hidden="true">▾</span></button>
-        ${isOverridden(place) ? `<p class="status-cue">saved on this device</p>` : ""}
+        ${isOverridden(place) ? `<p class="status-cue">changed here</p>` : ""}
       </div>
     </div>
     ${place.address ? `<p class="address">${escapeHtml(place.address)}</p>` : ""}
