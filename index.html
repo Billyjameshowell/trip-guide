@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Trip guide for Billy and Isabel — London and Dublin, September 2026." />
+    <title>Trip Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,620;1,9..144,500&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#places">Skip to places</a>
+
+    <header class="masthead">
+      <div class="masthead__inner">
+        <p class="eyebrow" id="travelers">Billy &amp; Isabel</p>
+        <h1 id="site-title">Trip Guide</h1>
+        <p class="lede" id="headline">London + Dublin notes · September 2026</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="overview" aria-labelledby="overview-heading">
+        <h2 id="overview-heading" class="visually-hidden">Trip overview</h2>
+        <div class="overview__grid" id="overview">
+          <article class="overview__card">
+            <h3>London hotel nights</h3>
+            <p id="london-nights">Wed 16 Sep – Fri 18 Sep 2026</p>
+          </article>
+          <article class="overview__card">
+            <h3>Already held</h3>
+            <p id="held">Flight to London already held for 15 Sep.</p>
+          </article>
+          <article class="overview__card overview__card--note">
+            <h3>This is a guide</h3>
+            <p id="disclaimer">Guide only — do not book or pay from this site.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="filters" aria-labelledby="filter-heading">
+        <div class="filters__inner">
+          <h2 id="filter-heading">Filter</h2>
+          <div class="filter-block">
+            <p class="filter-label" id="city-filter-label">City</p>
+            <div class="chips" id="city-filters" role="group" aria-labelledby="city-filter-label"></div>
+          </div>
+          <div class="filter-block">
+            <p class="filter-label" id="activity-filter-label">Activity</p>
+            <div class="chips" id="activity-filters" role="group" aria-labelledby="activity-filter-label"></div>
+          </div>
+          <p class="result-count" id="result-count" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="places" id="places" aria-live="polite">
+        <p class="loading" id="loading">Loading places…</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Add places in <code>data/places.json</code>. The page updates itself.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>

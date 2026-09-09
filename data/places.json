@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "title": "Trip Guide",
+    "travelers": ["Billy", "Isabel"],
+    "headline": "London + Dublin notes",
+    "when": "September 2026",
+    "londonNights": "Wed 16 Sep – Fri 18 Sep 2026",
+    "held": "Flight to London already held for 15 Sep.",
+    "disclaimer": "Guide only — do not book or pay from this site."
+  },
+  "cities": ["London", "Dublin"],
+  "activities": ["Bars", "Food", "Sights", "Stay", "Transport"],
+  "places": [
+    {
+      "id": "blind-spot",
+      "name": "Blind Spot",
+      "city": "London",
+      "neighborhood": "Covent Garden / St Martin's Lane",
+      "activity": "Bars",
+      "address": "Inside St Martins Lane hotel, 45 St Martin's Lane",
+      "description": "Hidden speakeasy (golden-hand door behind the tea counter). Globally inspired cocktails. Open Wed from 5pm. Cocktail hour second sip free 5–7pm. Easy pick for drinks before Dishoom.",
+      "note": "Reservation requested for Wed 16 Sep ~7:30pm for 2 — not confirmed until booked.",
+      "status": "requested",
+      "links": [
+        {
+          "label": "Official",
+          "url": "https://morgansoriginals.com/st-martins-lane/restaurants-bars/blind-spot/"
+        },
+        {
+          "label": "OpenTable",
+          "url": "https://www.opentable.com/r/blind-spot-london-london"
+        }
+      ]
+    },
+    {
+      "id": "eve-bar",
+      "name": "Eve Bar",
+      "city": "London",
+      "neighborhood": "Covent Garden / St Martin's Lane",
+      "activity": "Bars",
+      "address": "34–35 Southampton Street",
+      "description": "Adam Handling basement cocktail bar; serious mixology / date-night room.",
+      "status": "suggested",
+      "links": [
+        {
+          "label": "Official",
+          "url": "https://www.evebar.co.uk/"
+        }
+      ]
+    },
+    {
+      "id": "side-hustle",
+      "name": "Side Hustle",
+      "city": "London",
+      "neighborhood": "Covent Garden / St Martin's Lane",
+      "activity": "Bars",
+      "address": "NoMad London, Bow Street (old courthouse)",
+      "description": "Agave-led cocktails, nicer room, slightly longer walk from Dishoom.",
+      "status": "suggested",
+      "links": [
+        {
+          "label": "Official",
+          "url": "https://www.hilton.com/en/hotels/lonnmnd-nomad-london/dining/side-hustle/"
+        }
+      ]
+    },
+    {
+      "id": "dishoom-covent-garden",
+      "name": "Dishoom Covent Garden",
+      "city": "London",
+      "neighborhood": "Covent Garden",
+      "activity": "Food",
+      "address": "12 Upper St Martin's Lane",
+      "description": "Bombay café / Indian. Dinner locked Wed 16 Sep ~9pm for Billy and Isabel.",
+      "note": "After 6pm online reservations are usually for groups of 6+; they already have the booking.",
+      "status": "confirmed",
+      "links": [
+        {
+          "label": "Official",
+          "url": "https://www.dishoom.com/covent-garden/"
+        }
+      ]
+    },
+    {
+      "id": "thursday-dinner",
+      "name": "Thursday 17 Sep dinner",
+      "city": "London",
+      "neighborhood": "To decide",
+      "activity": "Food",
+      "description": "Placeholder: still needed.",
+      "status": "need-to-book",
+      "links": []
+    },
+    {
+      "id": "london-lunch",
+      "name": "Lunch one London day",
+      "city": "London",
+      "neighborhood": "To decide",
+      "activity": "Food",
+      "description": "Placeholder: still needed.",
+      "status": "need-to-book",
+      "links": []
+    },
+    {
+      "id": "tower-of-london",
+      "name": "Tower of London",
+      "city": "London",
+      "neighborhood": "Tower Hill",
+      "activity": "Sights",
+      "description": "Maybe — official tickets via Historic Royal Palaces.",
+      "status": "maybe",
+      "links": [
+        {
+          "label": "Tickets",
+          "url": "https://www.hrp.org.uk/tower-of-london/visit/tickets-and-prices/"
+        }
+      ]
+    },
+    {
+      "id": "british-museum",
+      "name": "British Museum",
+      "city": "London",
+      "neighborhood": "Bloomsbury",
+      "activity": "Sights",
+      "description": "Maybe — check the official visit page before going.",
+      "status": "maybe",
+      "links": [
+        {
+          "label": "Visit",
+          "url": "https://www.britishmuseum.org/visit"
+        }
+      ]
+    },
+    {
+      "id": "fielding-hotel",
+      "name": "The Fielding Hotel",
+      "city": "London",
+      "neighborhood": "Covent Garden",
+      "activity": "Stay",
+      "address": "4 Broad Court, Covent Garden",
+      "description": "Small townhouse opposite Royal Opera House; nicer option under ~$800 for 16–18 Sep. Skip room 43 (no window).",
+      "note": "Google Hotels showed $622 total with taxes as of 8 Sep 2026; recheck before booking. Not reserved — suggested / unbooked only.",
+      "status": "suggested",
+      "links": [
+        {
+          "label": "Official",
+          "url": "https://www.thefieldinghotel.co.uk/"
+        }
+      ]
+    },
+    {
+      "id": "book-of-kells",
+      "name": "Book of Kells Experience",
+      "city": "Dublin",
+      "neighborhood": "Trinity College",
+      "activity": "Sights",
+      "address": "Trinity College Old Library",
+      "description": "Manuscript + Long Room. Timed tickets.",
+      "status": "need-to-book",
+      "links": [
+        {
+          "label": "Experience",
+          "url": "https://www.visittrinity.ie/book-of-kells-experience/"
+        },
+        {
+          "label": "Book now",
+          "url": "https://www.visittrinity.ie/book-now/"
+        }
+      ]
+    },
+    {
+      "id": "guinness-storehouse",
+      "name": "Guinness Storehouse",
+      "city": "Dublin",
+      "neighborhood": "St James's Gate",
+      "activity": "Sights",
+      "address": "St James's Gate, Dublin 8",
+      "description": "Definite interest. Status: need to book.",
+      "status": "need-to-book",
+      "links": [
+        {
+          "label": "Visit",
+          "url": "https://www.guinness-storehouse.com/en/home"
+        },
+        {
+          "label": "Tickets",
+          "url": "https://www.guinness-storehouse.com/en/booking"
+        }
+      ]
+    },
+    {
+      "id": "flight-bristol-dublin",
+      "name": "Flight Bristol → Dublin",
+      "city": "Dublin",
+      "neighborhood": "Airport",
+      "activity": "Transport",
+      "description": "Needed; dates unknown.",
+      "status": "need-to-book",
+      "links": []
+    }
+  ]
+}
