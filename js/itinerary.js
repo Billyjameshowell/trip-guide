@@ -39,8 +39,10 @@ function renderMeta(meta) {
     els.title.textContent = meta.title;
     document.title = meta.title;
   }
-  if (meta.lede || meta.headline) {
-    els.headline.textContent = [meta.lede, meta.headline].filter(Boolean).join(" · ");
+  if (meta.lede) {
+    els.headline.textContent = meta.lede;
+  } else if (meta.headline) {
+    els.headline.textContent = meta.headline;
   }
 }
 
