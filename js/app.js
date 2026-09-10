@@ -41,9 +41,11 @@ async function init() {
       throw new Error(`Could not load places.json (${response.status})`);
     }
     state.data = await response.json();
+    applyUrlState(state.data);
     renderMeta(state.data.meta);
     renderFilters(state.data);
     renderPlaces();
+    scrollToHash();
   } catch (error) {
     els.places.innerHTML = `<p class="error">Couldn’t load places. Refresh and try again. ${escapeHtml(error.message)}</p>`;
   }
@@ -94,6 +96,26 @@ function setPlaceStatus(place, status) {
   closePicker();
   renderFilters(state.data);
   renderPlaces();
+}
+
+function applyUrlState(data) {
+  const params = new URLSearchParams(window.location.search);
+  const cities = data.cities || unique((data.places || []).map((place) => place.city));
+  const activities = data.activities || unique((data.places || []).map((place) => place.activity));
+  const city = params.get("city");
+  const activity = params.get("activity");
+  if (city && (city === "all" || cities.includes(city))) {
+    state.city = city;
+  }
+  if (activity && (activity === "all" || activities.includes(activity))) {
+    state.activity = activity;
+  }
+}
+
+function scrollToHash() {
+  const id = window.location.hash.replace(/^#/, "");
+  if (!id) return;
+  document.getElementById(id)?.scrollIntoView({ block: "start" });
 }
 
 function renderMeta(meta) {

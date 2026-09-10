@@ -1,0 +1,268 @@
+{
+  "meta": {
+    "title": "Itinerary",
+    "travelers": ["Billy", "Isabel"],
+    "headline": "15–27 September 2026",
+    "lede": "Day by day · 15–27 September 2026",
+    "disclaimer": "Guide only — do not book or pay from this site."
+  },
+  "openTasks": [
+    {
+      "text": "Bristol → Dublin flight",
+      "when": "Sun 20 Sep",
+      "status": "need-to-book",
+      "placeId": "flight-bristol-dublin"
+    },
+    {
+      "text": "Dublin → Lisbon flight",
+      "when": "Wed 23 Sep",
+      "status": "need-to-book"
+    },
+    {
+      "text": "Lisbon → DC flight",
+      "when": "Sun 27 Sep",
+      "status": "need-to-book"
+    },
+    {
+      "text": "London hotel",
+      "when": "Wed 16–Fri 18 Sep",
+      "status": "need-to-book",
+      "href": "index.html?activity=Stay"
+    },
+    {
+      "text": "Book of Kells",
+      "when": "Dublin",
+      "status": "need-to-book",
+      "placeId": "book-of-kells"
+    },
+    {
+      "text": "Guinness Storehouse",
+      "when": "Dublin",
+      "status": "need-to-book",
+      "placeId": "guinness-storehouse"
+    }
+  ],
+  "days": [
+    {
+      "id": "2026-09-15",
+      "date": "2026-09-15",
+      "label": "Tue 15 Sep",
+      "place": "DC → London",
+      "status": "confirmed",
+      "items": [
+        {
+          "title": "DC → London flight",
+          "detail": "Already held. No flight number listed here.",
+          "status": "confirmed"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-16",
+      "date": "2026-09-16",
+      "label": "Wed 16 Sep",
+      "place": "London",
+      "status": "confirmed",
+      "items": [
+        {
+          "title": "London hotel check-in",
+          "detail": "Check-in today, checkout Friday 18 Sep. Stay budget under $800 for those two nights. Still unbooked.",
+          "status": "need-to-book",
+          "href": "index.html?activity=Stay"
+        },
+        {
+          "title": "Blind Spot drinks",
+          "detail": "19:30 confirmed for 2.",
+          "status": "confirmed",
+          "placeId": "blind-spot"
+        },
+        {
+          "title": "Dishoom Covent Garden",
+          "detail": "Dinner around 9pm. Already booked.",
+          "status": "confirmed",
+          "placeId": "dishoom-covent-garden"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-17",
+      "date": "2026-09-17",
+      "label": "Thu 17 Sep",
+      "place": "London",
+      "status": "tbd",
+      "items": [
+        {
+          "title": "Hotel night",
+          "detail": "Second London night if the 16–18 stay is booked. Hotel still unbooked.",
+          "status": "need-to-book",
+          "href": "index.html?activity=Stay"
+        },
+        {
+          "title": "Dinner",
+          "detail": "Not chosen yet.",
+          "status": "tbd",
+          "placeId": "thursday-dinner"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-18",
+      "date": "2026-09-18",
+      "label": "Fri 18 Sep",
+      "place": "London → Cotswolds",
+      "status": "assumed",
+      "items": [
+        {
+          "title": "Leave London for the Cotswolds",
+          "detail": "Assumed — Billy said “I think the 18th.” Hotel checkout is this day.",
+          "status": "assumed"
+        },
+        {
+          "title": "How you get there",
+          "detail": "Train, car, or otherwise still TBD.",
+          "status": "tbd"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-19",
+      "date": "2026-09-19",
+      "label": "Sat 19 Sep",
+      "place": "Cotswolds",
+      "status": "tbd",
+      "items": [
+        {
+          "title": "Cotswolds day",
+          "detail": "No plan locked in yet.",
+          "status": "tbd"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-20",
+      "date": "2026-09-20",
+      "label": "Sun 20 Sep",
+      "place": "Cotswolds → Bristol → Dublin",
+      "status": "need-to-book",
+      "items": [
+        {
+          "title": "Cotswolds → Bristol",
+          "detail": "How you get to the airport is still TBD.",
+          "status": "tbd"
+        },
+        {
+          "title": "Bristol → Dublin flight",
+          "detail": "Need to book. No flight number yet.",
+          "status": "need-to-book",
+          "placeId": "flight-bristol-dublin"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-21",
+      "date": "2026-09-21",
+      "label": "Mon 21 Sep",
+      "place": "Dublin",
+      "status": "need-to-book",
+      "items": [
+        {
+          "title": "Book of Kells",
+          "detail": "Still to book. Timed tickets.",
+          "status": "need-to-book",
+          "placeId": "book-of-kells"
+        },
+        {
+          "title": "Guinness Storehouse",
+          "detail": "Still to book.",
+          "status": "need-to-book",
+          "placeId": "guinness-storehouse"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-22",
+      "date": "2026-09-22",
+      "label": "Tue 22 Sep",
+      "place": "Dublin",
+      "status": "tbd",
+      "items": [
+        {
+          "title": "Dublin day",
+          "detail": "Open day. Book of Kells and Guinness still need tickets if you have not booked them yet.",
+          "status": "tbd",
+          "href": "index.html?city=Dublin"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-23",
+      "date": "2026-09-23",
+      "label": "Wed 23 Sep",
+      "place": "Dublin → Lisbon",
+      "status": "need-to-book",
+      "items": [
+        {
+          "title": "Dublin → Lisbon flight",
+          "detail": "Need to book. No flight number yet.",
+          "status": "need-to-book"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-24",
+      "date": "2026-09-24",
+      "label": "Thu 24 Sep",
+      "place": "Lisbon",
+      "status": "tbd",
+      "items": [
+        {
+          "title": "Lisbon",
+          "detail": "No plan locked in yet.",
+          "status": "tbd"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-25",
+      "date": "2026-09-25",
+      "label": "Fri 25 Sep",
+      "place": "Lisbon",
+      "status": "tbd",
+      "items": [
+        {
+          "title": "Lisbon",
+          "detail": "No plan locked in yet.",
+          "status": "tbd"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-26",
+      "date": "2026-09-26",
+      "label": "Sat 26 Sep",
+      "place": "Lisbon",
+      "status": "tbd",
+      "items": [
+        {
+          "title": "Lisbon",
+          "detail": "No plan locked in yet.",
+          "status": "tbd"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-27",
+      "date": "2026-09-27",
+      "label": "Sun 27 Sep",
+      "place": "Lisbon → DC",
+      "status": "need-to-book",
+      "items": [
+        {
+          "title": "Lisbon → DC flight",
+          "detail": "Need to book. No flight number yet.",
+          "status": "need-to-book"
+        }
+      ]
+    }
+  ]
+}
