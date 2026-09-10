@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Day-by-day itinerary for Billy and Isabel — September 2026." />
+    <title>Itinerary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,620;1,9..144,500&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#days">Skip to days</a>
+
+    <header class="masthead">
+      <div class="masthead__inner">
+        <p class="eyebrow" id="travelers">Billy &amp; Isabel</p>
+        <h1 id="site-title">Itinerary</h1>
+        <p class="lede" id="headline">Day by day · 15–27 September 2026</p>
+        <nav class="site-nav" aria-label="Site">
+          <a href="index.html">Trip Guide</a>
+          <a href="itinerary.html" aria-current="page">Itinerary</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="open-tasks" id="still-to-book" aria-labelledby="open-tasks-heading">
+        <div class="open-tasks__inner">
+          <h2 id="open-tasks-heading">Still to book</h2>
+          <ul class="open-task-list" id="open-tasks"></ul>
+        </div>
+      </section>
+
+      <section class="days" id="days" aria-live="polite">
+        <p class="loading" id="loading">Loading itinerary…</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Uncertain bits are marked TBD or assumed. Nothing here books a ticket.</p>
+    </footer>
+
+    <script src="js/itinerary.js"></script>
+  </body>
+</html>
