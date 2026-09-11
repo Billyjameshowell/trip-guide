@@ -5,17 +5,18 @@
       "Billy",
       "Isabel"
     ],
-    "headline": "London + Dublin notes",
+    "headline": "London, Dublin + Lisbon notes",
     "when": "September 2026",
     "londonNights": "Wed 16 Sep – Fri 18 Sep 2026",
     "stayBudget": "Stay budget under $800 total for those two nights. Nothing booked.",
     "stayOverBudget": "Hazlitt’s and Resident Soho were over the $800 cap — listed as Maybe, not quotes.",
-    "held": "Flight to London already held for 15 Sep.",
+    "held": "UA924 IAD→LHR confirmed for 15 Sep. UA943 LIS→IAD confirmed for 27 Sep. Open-jaw: into London, home from Lisbon.",
     "disclaimer": "Guide only — do not book or pay from this site."
   },
   "cities": [
     "London",
-    "Dublin"
+    "Dublin",
+    "Lisbon"
   ],
   "activities": [
     "Bars",
@@ -319,6 +320,17 @@
       ]
     },
     {
+      "id": "flight-iad-lhr",
+      "name": "Flight IAD → LHR (UA924)",
+      "city": "London",
+      "neighborhood": "Airport",
+      "activity": "Transport",
+      "description": "United UA924 · Tue 15 Sep 2026 · IAD 10:05 PM → LHR 10:40 AM (+1 day). United Economy / Basic Economy. Open-jaw: fly into London, return from Lisbon.",
+      "note": "Confirmed. Isabel confirmation J8Z5XM, seat 49F; confirmation email total about $1,463.87 after miles. Billy eTicket 0167505801553 from the seat-assignment receipt (no PNR listed).",
+      "status": "confirmed",
+      "links": []
+    },
+    {
       "id": "flight-bristol-dublin",
       "name": "Flight Bristol → Dublin",
       "city": "Dublin",
@@ -326,6 +338,27 @@
       "activity": "Transport",
       "description": "Needed for Sun 20 Sep 2026. How you get from the Cotswolds to Bristol is still TBD. No flight number yet.",
       "status": "need-to-book",
+      "links": []
+    },
+    {
+      "id": "flight-dublin-lisbon",
+      "name": "Flight Dublin → Lisbon",
+      "city": "Lisbon",
+      "neighborhood": "Airport",
+      "activity": "Transport",
+      "description": "Needed for Wed 23 Sep 2026. No flight number yet.",
+      "status": "need-to-book",
+      "links": []
+    },
+    {
+      "id": "flight-lis-iad",
+      "name": "Flight LIS → IAD (UA943)",
+      "city": "Lisbon",
+      "neighborhood": "Airport",
+      "activity": "Transport",
+      "description": "United UA943 · Sun 27 Sep 2026 · LIS 12:20 PM → IAD 3:20 PM · nonstop 8h. Same open-jaw booking as UA924.",
+      "note": "Confirmed. Isabel confirmation J8Z5XM, seat 50L. Billy eTicket 0167505801553 (same booking as outbound; no PNR listed).",
+      "status": "confirmed",
       "links": []
     }
   ]
