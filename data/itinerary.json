@@ -89,6 +89,12 @@
       "status": "tbd",
       "items": [
         {
+          "title": "Tower of London",
+          "detail": "Confirmed all-day admission for 2 adults (Billy Howell + Isabel Dixon). Order DVOB8FBAT61KI. Paid £74.00. Tickets emailed to billyjameshowell@gmail.com. Tube to Tower Hill; show up mid-morning for Yeoman Warder / Beefeater tours.",
+          "status": "confirmed",
+          "placeId": "tower-of-london"
+        },
+        {
           "title": "Hotel night",
           "detail": "Second London night if the 16–18 stay is booked. Hotel still unbooked.",
           "status": "need-to-book",
