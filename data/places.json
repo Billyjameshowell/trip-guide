@@ -122,9 +122,14 @@
       "city": "London",
       "neighborhood": "Tower Hill",
       "activity": "Sights",
-      "description": "Maybe — official tickets via Historic Royal Palaces.",
-      "status": "maybe",
+      "description": "All-day Tower of London Admission. Booked Thu 17 Sep 2026 for 2 adults (Billy Howell + Isabel Dixon).",
+      "note": "Confirmed. Order reference DVOB8FBAT61KI. Paid £74.00. Tickets emailed to billyjameshowell@gmail.com. Tube to Tower Hill; show up mid-morning for Yeoman Warder / Beefeater tours.",
+      "status": "confirmed",
       "links": [
+        {
+          "label": "Confirmation",
+          "url": "https://booking.hrp.org.uk/checkout/DVOB8FBAT61KI?market=HRP&is-return=false"
+        },
         {
           "label": "Tickets",
           "url": "https://www.hrp.org.uk/tower-of-london/visit/tickets-and-prices/"
