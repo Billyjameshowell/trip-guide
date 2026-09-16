@@ -1,0 +1,239 @@
+{
+  "meta": {
+    "title": "Day plan",
+    "travelers": ["Billy", "Isabel"],
+    "lede": "Isabel’s London hour-by-hour · 16–20 Sep",
+    "intro": "Isabel’s draft, cleaned up. Booked facts are marked Confirmed. Open items stay open. London times are local.",
+    "disclaimer": "Guide only — do not book or pay from this site."
+  },
+  "days": [
+    {
+      "id": "2026-09-16",
+      "label": "Wed 16 Sep",
+      "title": "London Day 1",
+      "place": "London",
+      "slots": [
+        {
+          "time": "10:40 AM",
+          "title": "Arrive Heathrow",
+          "status": "confirmed",
+          "detail": "UA924 lands LHR about 10:40 (Isabel’s draft said 10 AM).",
+          "placeId": "flight-iad-lhr"
+        },
+        {
+          "time": "11:30 AM",
+          "title": "Tube Heathrow → Soho",
+          "status": "plan",
+          "detail": "Elizabeth line toward central London. Get off at Tottenham Court Road."
+        },
+        {
+          "time": "12:15 PM",
+          "title": "Drop bags at the hotel",
+          "status": "confirmed",
+          "detail": "The Resident Soho — 10 Carlisle Street, London W1D 3BR.",
+          "placeId": "resident-soho"
+        },
+        {
+          "time": "12:30 PM",
+          "title": "Lunch in Soho",
+          "status": "open",
+          "detail": "No restaurant picked yet."
+        },
+        {
+          "time": "1:45–2:45 PM",
+          "title": "Explore Soho",
+          "status": "idea",
+          "points": [
+            "Carlisle St → Soho Square → Carnaby St → Kingly Court → Liberty → Oxford Circus",
+            "The Toucan (19 Carlisle Street) is next door to the hotel if you want a Guinness — want, not booked."
+          ]
+        },
+        {
+          "time": "3:00 PM",
+          "title": "Check in & nap, or keep walking",
+          "status": "plan",
+          "detail": "Official check-in at The Resident Soho.",
+          "points": [
+            "The Resident Soho → Seven Dials → Neal’s Yard → Covent Garden → Trafalgar Square"
+          ]
+        },
+        {
+          "time": "7:30 PM",
+          "title": "Blind Spot cocktails",
+          "status": "confirmed",
+          "detail": "19:30 for 2. 45 St. Martin’s Lane, London WC2N 4HX. Hidden door behind the tea counter / golden hand.",
+          "placeId": "blind-spot"
+        },
+        {
+          "time": "9:30 PM",
+          "title": "Dishoom dinner",
+          "status": "confirmed",
+          "detail": "Isabel has 9:30; the guide has ~9pm. Treat as ~9–9:30. 12 Upper St Martin’s Lane, WC2H 9FB.",
+          "placeId": "dishoom-covent-garden"
+        },
+        {
+          "time": "11:00 PM",
+          "title": "Walk back to the hotel",
+          "status": "plan",
+          "detail": "About 15 minutes to The Resident Soho."
+        }
+      ]
+    },
+    {
+      "id": "2026-09-17",
+      "label": "Thu 17 Sep",
+      "title": "London Day 2",
+      "place": "London",
+      "theme": "Soho coffee → Westminster / Buckingham → St James’s → fish & chips → Tower of London / Tower Bridge → Borough Market → back to Soho",
+      "slots": [
+        {
+          "time": "8:00–8:30 AM",
+          "title": "Coffee near the hotel",
+          "status": "idea",
+          "detail": "Picks, not bookings.",
+          "points": [
+            "Kiss the Hippo — 30 Golden Square, W1F 9LD",
+            "Ada — Isabel’s other pick; no address in the draft"
+          ]
+        },
+        {
+          "time": "9:00 AM",
+          "title": "Buckingham Palace area",
+          "status": "idea",
+          "detail": "Exterior and parks — not a State Rooms booking.",
+          "points": [
+            "Tube Piccadilly Circus → Green Park, then walk through Green Park to Buckingham Palace",
+            "9:00–9:45: Victoria Memorial, walk St James’s Park"
+          ]
+        },
+        {
+          "time": "10:00 AM",
+          "title": "Westminster + Big Ben",
+          "status": "idea",
+          "points": [
+            "Horse Guards Parade, Westminster Abbey, Parliament Square, Big Ben",
+            "Walk across Westminster Bridge for classic photos"
+          ]
+        },
+        {
+          "time": "12:15 PM",
+          "title": "Fish & chips",
+          "status": "idea",
+          "detail": "Hobson’s Fish & Chips, Charing Cross — 13–15 Villiers Street, WC2N 6ND. No reservation."
+        },
+        {
+          "time": "1:15 PM",
+          "title": "Tower of London",
+          "status": "confirmed",
+          "detail": "All-day tickets booked (order DVOB8FBAT61KI). A 1:15 start works. Tower of London, London EC3N 4AB. Tube from Charing Cross to Tower Hill.",
+          "points": [
+            "Crown Jewels, White Tower, Tower Green, ravens, exterior walls / views"
+          ],
+          "placeId": "tower-of-london"
+        },
+        {
+          "time": "3:15 PM",
+          "title": "Tower Bridge",
+          "status": "idea",
+          "detail": "Walk from the Tower. Photos / Thames."
+        },
+        {
+          "time": "4:15 PM",
+          "title": "Borough Market",
+          "status": "idea",
+          "detail": "Via London Bridge / Hay’s Galleria."
+        },
+        {
+          "time": "5:30 PM",
+          "title": "Back to Soho",
+          "status": "plan",
+          "detail": "London Bridge → Tottenham Court Road → The Resident Soho."
+        },
+        {
+          "time": "6:00–7:30 PM",
+          "title": "Hotel / shower / rest",
+          "status": "plan"
+        },
+        {
+          "time": "7:30 PM",
+          "title": "Drinks at Flute",
+          "status": "open",
+          "detail": "Not booked. Flute is the rooftop bar at Broadwick Soho, 20 Broadwick Street, W1F 8HT."
+        },
+        {
+          "time": "Dinner",
+          "title": "Dinner",
+          "status": "open",
+          "detail": "Still ?? — nothing picked.",
+          "placeId": "thursday-dinner"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-18",
+      "label": "Fri 18 Sep",
+      "title": "Cotswolds & welcome party",
+      "place": "London → Cotswolds",
+      "slots": [
+        {
+          "time": "Day",
+          "title": "Sara & Sahil arrive in London",
+          "status": "plan",
+          "detail": "They pick up the rental car."
+        },
+        {
+          "time": "Day",
+          "title": "Drive Heathrow → Cotswolds",
+          "status": "plan"
+        },
+        {
+          "time": "3:00 PM",
+          "title": "Check in to Slaughter Manor",
+          "status": "plan"
+        },
+        {
+          "time": "6:00 PM",
+          "title": "Welcome party",
+          "status": "plan"
+        }
+      ]
+    },
+    {
+      "id": "2026-09-19",
+      "label": "Sat 19 Sep",
+      "title": "Wedding",
+      "place": "Cotswolds",
+      "slots": [
+        {
+          "time": "Day",
+          "title": "Wedding",
+          "status": "plan",
+          "detail": "Isabel’s draft is just this heading — no hour-by-hour yet."
+        }
+      ]
+    },
+    {
+      "id": "2026-09-20",
+      "label": "Sun 20 Sep",
+      "title": "Oxford & travel to Dublin",
+      "place": "Cotswolds → Dublin",
+      "slots": [
+        {
+          "time": "9:30 AM",
+          "title": "Farewell brunch",
+          "status": "plan"
+        },
+        {
+          "time": "Later",
+          "title": "Rental car / onward travel",
+          "status": "open",
+          "detail": "Isabel’s draft cuts off here. Bristol → Dublin flight is still to book — see the itinerary."
+        }
+      ]
+    }
+  ],
+  "comingSoon": {
+    "title": "Dublin & Lisbon",
+    "detail": "Coming soon — Isabel’s draft is still empty here. Don’t invent a plan."
+  }
+}

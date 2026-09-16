@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Confirmed bookings for Billy and Isabel — hotel, flights, drinks, Tower of London." />
+    <title>Booked</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,620;1,9..144,500&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#booked">Skip to bookings</a>
+
+    <header class="masthead">
+      <div class="masthead__inner">
+        <p class="eyebrow" id="travelers">Billy &amp; Isabel</p>
+        <h1 id="site-title">Booked</h1>
+        <p class="lede" id="headline">Confirmed only · London times local</p>
+        <nav class="site-nav" aria-label="Site">
+          <a href="index.html">Trip Guide</a>
+          <a href="booked.html" aria-current="page">Booked</a>
+          <a href="plan.html">Day plan</a>
+          <a href="itinerary.html">Itinerary</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="scan-intro" aria-labelledby="booked-intro-heading">
+        <div class="scan-intro__inner">
+          <h2 id="booked-intro-heading" class="visually-hidden">How to read this</h2>
+          <p id="booked-intro">Short list of what’s actually booked. Times are local. Addresses open in Maps.</p>
+        </div>
+      </section>
+
+      <section class="scan-page" id="booked" aria-live="polite">
+        <p class="loading" id="loading">Loading bookings…</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Confirmed only. Tap a status to change it on this phone. Want items are not reservations.</p>
+    </footer>
+
+    <script src="js/booked.js"></script>
+  </body>
+</html>

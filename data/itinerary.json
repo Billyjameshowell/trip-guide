@@ -20,12 +20,6 @@
       "placeId": "flight-dublin-lisbon"
     },
     {
-      "text": "London hotel",
-      "when": "Wed 16–Fri 18 Sep",
-      "status": "need-to-book",
-      "href": "index.html?activity=Stay"
-    },
-    {
       "text": "Book of Kells",
       "when": "Dublin",
       "status": "need-to-book",
@@ -62,10 +56,10 @@
       "status": "confirmed",
       "items": [
         {
-          "title": "London hotel check-in",
-          "detail": "Check-in today, checkout Friday 18 Sep. Stay budget under $800 for those two nights. Still unbooked.",
-          "status": "need-to-book",
-          "href": "index.html?activity=Stay"
+          "title": "The Resident Soho check-in",
+          "detail": "Booked. 10 Carlisle Street, London W1D 3BR. Check-in today, checkout Friday 18 Sep. Phone +44 20 3697 3697.",
+          "status": "confirmed",
+          "placeId": "resident-soho"
         },
         {
           "title": "Blind Spot drinks",
@@ -95,10 +89,10 @@
           "placeId": "tower-of-london"
         },
         {
-          "title": "Hotel night",
-          "detail": "Second London night if the 16–18 stay is booked. Hotel still unbooked.",
-          "status": "need-to-book",
-          "href": "index.html?activity=Stay"
+          "title": "The Resident Soho",
+          "detail": "Second London night. Checkout Friday 18 Sep.",
+          "status": "confirmed",
+          "placeId": "resident-soho"
         },
         {
           "title": "Dinner",

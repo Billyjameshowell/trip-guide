@@ -1,13 +1,14 @@
 const STATUS_LABELS = {
   confirmed: "Confirmed",
   suggested: "Suggested",
+  want: "Want",
   maybe: "Maybe",
   "need-to-book": "Need to book",
   requested: "Requested",
   hidden: "Hidden",
 };
 
-const STATUS_ORDER = ["confirmed", "suggested", "maybe", "need-to-book", "requested", "hidden"];
+const STATUS_ORDER = ["confirmed", "suggested", "want", "maybe", "need-to-book", "requested", "hidden"];
 const STORAGE_KEY = "trip-guide-status-overrides";
 
 const state = {

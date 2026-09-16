@@ -8,9 +8,9 @@
     "headline": "London, Dublin + Lisbon notes",
     "when": "September 2026",
     "londonNights": "Wed 16 Sep – Fri 18 Sep 2026",
-    "stayBudget": "Stay budget under $800 total for those two nights. Nothing booked.",
-    "stayOverBudget": "Hazlitt’s and Resident Soho were over the $800 cap — listed as Maybe, not quotes.",
-    "held": "UA924 IAD→LHR confirmed for 15 Sep. UA943 LIS→IAD confirmed for 27 Sep. Open-jaw: into London, home from Lisbon.",
+    "stayBudget": "London base is The Resident Soho, Wed 16–Fri 18 Sep. Billy confirmed.",
+    "stayOverBudget": "Hazlitt’s was over the $800 cap — listed as Maybe. Resident Soho was over the cap too and is now the booked hotel.",
+    "held": "UA924 IAD→LHR confirmed for 15 Sep. UA943 LIS→IAD confirmed for 27 Sep. Open-jaw: into London, home from Lisbon. Resident Soho booked. Tower of London booked Thu 17.",
     "disclaimer": "Guide only — do not book or pay from this site."
   },
   "cities": [
@@ -32,7 +32,7 @@
       "city": "London",
       "neighborhood": "Covent Garden / St Martin's Lane",
       "activity": "Bars",
-      "address": "Inside St Martins Lane hotel, 45 St Martin's Lane",
+      "address": "45 St. Martin's Lane, London WC2N 4HX",
       "description": "Hidden speakeasy (golden-hand door behind the tea counter). Globally inspired cocktails. Open Wed from 5pm. Cocktail hour second sip free 5–7pm. Easy pick for drinks before Dishoom.",
       "note": "Confirmed on OpenTable: Wed 16 Sep 2026 at 19:30 for 2 (Billy & Isabel), before Dishoom. Cancel with 24h notice or £20/person may apply.",
       "status": "confirmed",
@@ -44,6 +44,10 @@
         {
           "label": "OpenTable",
           "url": "https://www.opentable.com/r/blind-spot-london-london"
+        },
+        {
+          "label": "Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=45+St.+Martin%27s+Lane,+London+WC2N+4HX"
         }
       ]
     },
@@ -85,7 +89,7 @@
       "city": "London",
       "neighborhood": "Covent Garden",
       "activity": "Food",
-      "address": "12 Upper St Martin's Lane",
+      "address": "12 Upper St Martin's Lane, London WC2H 9FB",
       "description": "Bombay café / Indian. Dinner locked Wed 16 Sep ~9pm for Billy and Isabel.",
       "note": "After 6pm online reservations are usually for groups of 6+; they already have the booking.",
       "status": "confirmed",
@@ -93,6 +97,10 @@
         {
           "label": "Official",
           "url": "https://www.dishoom.com/covent-garden/"
+        },
+        {
+          "label": "Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=12+Upper+St+Martin%27s+Lane,+London+WC2H+9FB"
         }
       ]
     },
@@ -122,6 +130,7 @@
       "city": "London",
       "neighborhood": "Tower Hill",
       "activity": "Sights",
+      "address": "Tower of London, London EC3N 4AB",
       "description": "All-day Tower of London Admission. Booked Thu 17 Sep 2026 for 2 adults (Billy Howell + Isabel Dixon).",
       "note": "Confirmed. Order reference DVOB8FBAT61KI. Paid £74.00. Tickets emailed to billyjameshowell@gmail.com. Tube to Tower Hill; show up mid-morning for Yeoman Warder / Beefeater tours.",
       "status": "confirmed",
@@ -133,6 +142,10 @@
         {
           "label": "Tickets",
           "url": "https://www.hrp.org.uk/tower-of-london/visit/tickets-and-prices/"
+        },
+        {
+          "label": "Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=Tower+of+London,+London+EC3N+4AB"
         }
       ]
     },
@@ -274,13 +287,39 @@
       "city": "London",
       "neighborhood": "Soho",
       "activity": "Stay",
-      "description": "Named Soho pick that came in over the $800 stay-total cap for 16–18 Sep. Not a price quote and not booked.",
-      "note": "Over budget — left as Maybe so it stays visible as a rejected option.",
-      "status": "maybe",
+      "address": "10 Carlisle Street, London W1D 3BR",
+      "description": "London base. Check-in Wed 16 Sep, checkout Fri 18 Sep. Billy confirmed.",
+      "note": "Booked. Phone +44 20 3697 3697. The Toucan (want, not booked) is next door at 19 Carlisle Street.",
+      "status": "confirmed",
       "links": [
         {
           "label": "Official",
           "url": "https://www.residenthotels.com/locations/soho"
+        },
+        {
+          "label": "Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=10+Carlisle+Street,+London+W1D+3BR"
+        }
+      ]
+    },
+    {
+      "id": "the-toucan",
+      "name": "The Toucan",
+      "city": "London",
+      "neighborhood": "Soho",
+      "activity": "Bars",
+      "address": "19 Carlisle Street, London W1D 3BY",
+      "description": "Guinness pub next door to The Resident Soho — same street. Want, not booked.",
+      "note": "Hours from thetoucansoho.co.uk: Mon–Tue 4pm–11pm; Wed–Sat 12–11pm; Sun closed. Phone (020) 7437 4123.",
+      "status": "want",
+      "links": [
+        {
+          "label": "Official",
+          "url": "https://www.thetoucansoho.co.uk/"
+        },
+        {
+          "label": "Maps",
+          "url": "https://www.google.com/maps/search/?api=1&query=19+Carlisle+Street,+London+W1D+3BY"
         }
       ]
     },
