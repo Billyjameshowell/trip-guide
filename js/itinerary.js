@@ -126,7 +126,7 @@ function taskLink(entry) {
 
 function entryHref(entry) {
   if (entry.href) return entry.href;
-  if (entry.placeId) return `index.html#${entry.placeId}`;
+  if (entry.placeId) return `/#${entry.placeId}`;
   return "";
 }
 
