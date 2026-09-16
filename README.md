@@ -9,9 +9,11 @@ This is a guide only. Do not book or pay from the site.
 ## What’s here
 
 - Home page with trip overview and filters by **city** and **activity** (Bars, Food, Sights, Stay, Transport).
+- [Booked](booked.html) — short confirmed list (hotel, flights, Blind Spot, Dishoom, Tower). Times, addresses, and confirmation notes. Lives in [`data/booked.json`](data/booked.json).
+- [Day plan](plan.html) — Isabel’s hour-by-hour London draft, cleaned up and lightly reconciled with what’s booked. Lives in [`data/plan.json`](data/plan.json).
 - [Itinerary](itinerary.html) with the day-by-day plan (15–27 Sep 2026). Open flights and uncertain bits are marked **Need to book**, **TBD**, or **Assumed**. Days live in [`data/itinerary.json`](data/itinerary.json).
-- Place cards with neighborhood, a short description, tags, official/booking links, and a status: **Confirmed**, **Suggested**, **Maybe**, **Need to book**, **Requested**, or **Hidden**.
-- Hotel suggestions under **Stay** include dated price snapshots and booking links. Nothing is booked unless a card says so.
+- Place cards with neighborhood, a short description, tags, official/booking links, and a status: **Confirmed**, **Suggested**, **Want**, **Maybe**, **Need to book**, **Requested**, or **Hidden**.
+- London hotel is **The Resident Soho** (Wed 16–Fri 18). Other Stay cards are leftover options. The Toucan is a **Want** next door — not booked.
 - Status chips are editable on the page. Picks are stored in `localStorage` on that phone only and are not written back to `data/places.json`. Hidden places drop out of the default list; use **Show hidden** to bring them back.
 - All shared place content lives in one file: [`data/places.json`](data/places.json). The UI reads that file, so you can add cities and places without rewriting the page.
 
@@ -42,7 +44,7 @@ Plain HTML, CSS, and a little JavaScript. No build step. Cloudflare Pages (`trip
 ```
 
 3. If the city is new, add it to the top-level `cities` array (for example `"Paris"`). New activity types can go in `activities`.
-4. Use one of these `status` values: `confirmed`, `suggested`, `maybe`, `need-to-book`, `requested`, `hidden`.
+4. Use one of these `status` values: `confirmed`, `suggested`, `want`, `maybe`, `need-to-book`, `requested`, `hidden`.
 5. Commit and push to `main`. Pages will pick up the change.
 
 Keep descriptions factual. Don’t invent prices or claim something is booked unless it is. Hotel prices in this guide are dated snapshots only.
@@ -56,6 +58,11 @@ Keep descriptions factual. Don’t invent prices or claim something is booked un
 5. Commit and push to `main`.
 
 Weekdays follow the 2026 calendar (16 Sep is a Wednesday). Do not invent hotel bookings or flight numbers.
+
+## Booked list and day plan
+
+- Confirmed-only details: [`data/booked.json`](data/booked.json).
+- Isabel’s hour-by-hour: [`data/plan.json`](data/plan.json). Keep her structure; mark open items `open` and suggestions `idea`. Do not fill empty Dublin / Lisbon stubs.
 
 ## Statuses on a phone
 

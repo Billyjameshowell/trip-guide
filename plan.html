@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Isabel’s hour-by-hour London day plan for Billy and Isabel — September 2026." />
+    <title>Day plan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,620;1,9..144,500&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#plan">Skip to days</a>
+
+    <header class="masthead">
+      <div class="masthead__inner">
+        <p class="eyebrow" id="travelers">Billy &amp; Isabel</p>
+        <h1 id="site-title">Day plan</h1>
+        <p class="lede" id="headline">Isabel’s London hour-by-hour · 16–20 Sep</p>
+        <nav class="site-nav" aria-label="Site">
+          <a href="index.html">Trip Guide</a>
+          <a href="booked.html">Booked</a>
+          <a href="plan.html" aria-current="page">Day plan</a>
+          <a href="itinerary.html">Itinerary</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="scan-intro" aria-labelledby="plan-intro-heading">
+        <div class="scan-intro__inner">
+          <h2 id="plan-intro-heading" class="visually-hidden">How to read this</h2>
+          <p id="plan-intro">Isabel’s draft, cleaned up. Booked facts are marked Confirmed. Open items stay open.</p>
+        </div>
+      </section>
+
+      <section class="scan-page scan-page--plan" id="plan" aria-live="polite">
+        <p class="loading" id="loading">Loading day plan…</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Isabel’s structure, lightly reconciled. Nothing here books a ticket.</p>
+    </footer>
+
+    <script src="js/plan.js"></script>
+  </body>
+</html>

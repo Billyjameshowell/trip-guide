@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "title": "Booked",
+    "travelers": ["Billy", "Isabel"],
+    "lede": "Confirmed only · London times local",
+    "intro": "Short list of what’s actually booked. Times are local. Addresses open in Maps. Nothing else here is a reservation.",
+    "disclaimer": "Guide only — do not book or pay from this site."
+  },
+  "groups": [
+    {
+      "id": "hotel",
+      "label": "Base — hotel",
+      "when": "Wed 16–Fri 18 Sep",
+      "items": [
+        {
+          "title": "The Resident Soho",
+          "status": "confirmed",
+          "placeId": "resident-soho",
+          "when": "Check-in Wed 16 · Check-out Fri 18",
+          "address": "10 Carlisle Street, London W1D 3BR",
+          "phone": "+44 20 3697 3697",
+          "tel": "+442036973697",
+          "notes": [
+            "Billy confirmed — this is the London base.",
+            "The Toucan (want, not booked) is next door on the same street."
+          ],
+          "links": [
+            {
+              "label": "Official",
+              "url": "https://www.residenthotels.com/locations/soho"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "outbound",
+      "label": "Tue 15 → Wed 16 Sep",
+      "when": "Outbound flight",
+      "items": [
+        {
+          "title": "UA924 IAD → LHR",
+          "status": "confirmed",
+          "placeId": "flight-iad-lhr",
+          "when": "IAD 10:05pm (15 Sep) → LHR 10:40am (16 Sep)",
+          "notes": [
+            "Travelers: Billy Howell + Isabel Dixon",
+            "Billy eTicket 0167505801553",
+            "Isabel PNR J8Z5XM"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wed-16",
+      "label": "Wed 16 Sep",
+      "when": "Evening",
+      "items": [
+        {
+          "title": "Blind Spot drinks",
+          "status": "confirmed",
+          "placeId": "blind-spot",
+          "when": "19:30 London time · party of 2",
+          "address": "45 St. Martin's Lane, London WC2N 4HX",
+          "notes": [
+            "Inside St Martins Lane hotel — hidden door behind the tea counter / golden hand.",
+            "OpenTable confirmed. Cancel 24h ahead or £20pp may apply."
+          ],
+          "links": [
+            {
+              "label": "OpenTable",
+              "url": "https://www.opentable.com/r/blind-spot-london-london"
+            }
+          ]
+        },
+        {
+          "title": "Dishoom Covent Garden",
+          "status": "confirmed",
+          "placeId": "dishoom-covent-garden",
+          "when": "~21:00 after Blind Spot",
+          "address": "12 Upper St Martin's Lane, London WC2H 9FB",
+          "notes": [
+            "Evening plan — already marked booked on the guide. No confirmation number on file."
+          ],
+          "links": [
+            {
+              "label": "Official",
+              "url": "https://www.dishoom.com/covent-garden/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thu-17",
+      "label": "Thu 17 Sep",
+      "when": "All day",
+      "items": [
+        {
+          "title": "Tower of London",
+          "status": "confirmed",
+          "placeId": "tower-of-london",
+          "when": "All-day admission · 2 adults",
+          "address": "Tower of London, London EC3N 4AB",
+          "notes": [
+            "BOOKED · Order DVOB8FBAT61KI · £74",
+            "Tube: Tower Hill",
+            "Tip: mid-morning for Yeoman Warder / Beefeater tours",
+            "Tickets emailed to billyjameshowell@gmail.com"
+          ],
+          "links": [
+            {
+              "label": "Confirmation",
+              "url": "https://booking.hrp.org.uk/checkout/DVOB8FBAT61KI?market=HRP&is-return=false"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "return",
+      "label": "Sun 27 Sep",
+      "when": "Return flight",
+      "items": [
+        {
+          "title": "UA943 LIS → IAD",
+          "status": "confirmed",
+          "placeId": "flight-lis-iad",
+          "when": "LIS 12:20pm → IAD 3:20pm",
+          "notes": [
+            "Same open-jaw booking as UA924."
+          ]
+        }
+      ]
+    }
+  ],
+  "nearby": {
+    "id": "nearby",
+    "label": "Want / nearby — not booked",
+    "intro": "Ideas next to the hotel. Do not treat these as reservations.",
+    "items": [
+      {
+        "title": "The Toucan",
+        "status": "want",
+        "placeId": "the-toucan",
+        "when": "Guinness pub · next door",
+        "address": "19 Carlisle Street, London W1D 3BY",
+        "phone": "(020) 7437 4123",
+        "tel": "+442074374123",
+        "notes": [
+          "Same street as The Resident Soho.",
+          "Hours (thetoucansoho.co.uk): Mon–Tue 4pm–11pm; Wed–Sat 12–11pm; Sun closed."
+        ],
+        "links": [
+          {
+            "label": "Official",
+            "url": "https://www.thetoucansoho.co.uk/"
+          }
+        ]
+      }
+    ]
+  }
+}

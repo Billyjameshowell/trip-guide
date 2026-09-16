@@ -155,6 +155,9 @@ svg {
 .places,
 .days,
 .open-tasks__inner,
+.page-cue__inner,
+.scan-intro__inner,
+.scan-page,
 .site-footer {
   width: min(72rem, calc(100% - 1.6rem));
   margin-inline: auto;
@@ -299,6 +302,10 @@ svg {
 }
 
 .place-card[data-status="suggested"] {
+  border-left-color: var(--suggested-ink);
+}
+
+.place-card[data-status="want"] {
   border-left-color: var(--suggested-ink);
 }
 
@@ -459,6 +466,22 @@ button.status:focus-visible {
 .status--suggested {
   background: var(--suggested-bg);
   color: var(--suggested-ink);
+}
+
+.status--want {
+  background: var(--suggested-bg);
+  color: var(--suggested-ink);
+}
+
+.status--open {
+  background: var(--book-bg);
+  color: var(--book-ink);
+}
+
+.status--idea,
+.status--plan {
+  background: var(--maybe-bg);
+  color: var(--maybe-ink);
 }
 
 .status--maybe {
@@ -709,5 +732,158 @@ button.status:focus-visible {
 @media (min-width: 1080px) {
   .open-task-list {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.page-cue {
+  margin-top: 1.4rem;
+}
+
+.page-cue__inner,
+.scan-intro__inner {
+  background: rgba(247, 241, 228, 0.72);
+  border: 1px solid var(--rule);
+  border-radius: 22px;
+  padding: 0.9rem 1rem;
+}
+
+.page-cue__inner p,
+.scan-intro__inner p {
+  margin: 0;
+}
+
+.page-cue__inner p + p {
+  margin-top: 0.35rem;
+}
+
+.scan-intro {
+  margin-top: 1.4rem;
+}
+
+.scan-page {
+  width: min(40rem, calc(100% - 1.6rem));
+  margin-top: 1.15rem;
+  padding-bottom: 3rem;
+  display: grid;
+  gap: 1.15rem;
+}
+
+.scan-page--plan {
+  width: min(44rem, calc(100% - 1.6rem));
+}
+
+.booked-group__head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.25rem 0.75rem;
+  align-items: baseline;
+  margin-bottom: 0.55rem;
+}
+
+.booked-group__label {
+  margin: 0;
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+}
+
+.booked-group__when,
+.booked-group__intro {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+.booked-group__intro {
+  margin: -0.15rem 0 0.55rem;
+}
+
+.booked-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.booked-group--nearby .booked-card {
+  border-style: dashed;
+}
+
+.booked-card__title {
+  margin: 0;
+  font-size: 1.28rem;
+  line-height: 1.2;
+}
+
+.booked-card__when {
+  margin: 0.4rem 0 0;
+  font-weight: 700;
+}
+
+.booked-notes,
+.plan-points {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.booked-notes li + li,
+.plan-points li + li {
+  margin-top: 0.25rem;
+}
+
+.plan-theme {
+  margin: 0.7rem 0 0;
+  padding: 0.55rem 0.65rem;
+  background: var(--paper-deep);
+  border-radius: 10px;
+  font-size: 0.95rem;
+}
+
+.plan-slots {
+  list-style: none;
+  margin: 0.85rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.plan-slot {
+  display: grid;
+  gap: 0.25rem 0.85rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--paper-deep);
+}
+
+.plan-slot:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.plan-slot__time {
+  margin: 0;
+  font-weight: 700;
+  color: var(--forest);
+  font-size: 0.95rem;
+}
+
+.plan-slot__top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.35rem 0.75rem;
+}
+
+.plan-slot__title {
+  margin: 0;
+  font-weight: 700;
+}
+
+.plan-slot .status,
+.plan-day--soon .status {
+  cursor: default;
+}
+
+@media (min-width: 560px) {
+  .plan-slot {
+    grid-template-columns: 7.25rem 1fr;
   }
 }
