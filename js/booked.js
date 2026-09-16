@@ -184,7 +184,7 @@ function bookedCard(item) {
     ? `<a href="${escapeAttr(mapsUrl(item.address))}" target="_blank" rel="noopener noreferrer">Maps</a>`
     : "";
   const phone = item.phone
-    ? `<a href="${escapeAttr(`tel:${item.tel || item.phone}`}">${escapeHtml(item.phone)}</a>`
+    ? `<a href="${escapeAttr('tel:' + (item.tel || item.phone))}">${escapeHtml(item.phone)}</a>`
     : "";
   const links = [maps, phone, extraLinks].filter(Boolean).join("");
   const editable = Boolean(item.placeId);

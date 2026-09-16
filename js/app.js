@@ -116,7 +116,9 @@ function applyUrlState(data) {
 function scrollToHash() {
   const id = window.location.hash.replace(/^#/, "");
   if (!id) return;
-  document.getElementById(id)?.scrollIntoView({ block: "start" });
+  const go = () => document.getElementById(id)?.scrollIntoView({ block: "start" });
+  go();
+  requestAnimationFrame(go);
 }
 
 function renderMeta(meta) {
