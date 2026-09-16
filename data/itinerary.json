@@ -187,7 +187,7 @@
           "title": "Dublin day",
           "detail": "Open day. Book of Kells and Guinness still need tickets if you have not booked them yet.",
           "status": "tbd",
-          "href": "index.html?city=Dublin"
+          "href": "/?city=Dublin"
         }
       ]
     },

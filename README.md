@@ -54,7 +54,7 @@ Keep descriptions factual. Don’t invent prices or claim something is booked un
 1. Open `data/itinerary.json`.
 2. Change a day in the `days` array, or an item in `openTasks`.
 3. Use these day/item `status` values: `confirmed`, `need-to-book`, `tbd`, `assumed`.
-4. To point at a place on the guide, set `"placeId": "blind-spot"` (uses the place `id` in `places.json`). You can also set `"href": "index.html?activity=Stay"`.
+4. To point at a place on the guide, set `"placeId": "blind-spot"` (uses the place `id` in `places.json`). You can also set `"href": "/?activity=Stay"`.
 5. Commit and push to `main`.
 
 Weekdays follow the 2026 calendar (16 Sep is a Wednesday). Do not invent hotel bookings or flight numbers.
@@ -80,5 +80,5 @@ Then visit [http://localhost:8080](http://localhost:8080).
 
 ## Hosting
 
-- **Cloudflare Pages:** project `trip-guide`, production URL [https://trip-guide-a1c.pages.dev](https://trip-guide-a1c.pages.dev), deploys from `main`.
+- **Cloudflare Pages:** project `trip-guide`, production URL [https://trip-guide-a1c.pages.dev](https://trip-guide-a1c.pages.dev), deploys from `main`. Pages already serves `/booked` from `booked.html` and 308-redirects `/booked.html` → `/booked`. Do not add `_redirects` rewrites from `/foo` to `/foo.html` (that loops with the 308). Nav uses extensionless paths so Cloudflare Access callbacks match.
 - **GitHub Pages:** [https://billyjameshowell.github.io/trip-guide/](https://billyjameshowell.github.io/trip-guide/) publishes the **root of `main`** (not `/docs`). [`.nojekyll`](.nojekyll) is included so GitHub does not run Jekyll on the static files.

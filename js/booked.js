@@ -167,7 +167,7 @@ function renderGroup(group, nearby = false) {
 function bookedCard(item) {
   const status = effectiveStatus(item);
   const statusLabel = STATUS_LABELS[status] || status;
-  const placeHref = item.placeId ? `index.html#${item.placeId}` : "";
+  const placeHref = item.placeId ? `/#${item.placeId}` : "";
   const title = placeHref
     ? `<a class="inline-link" href="${escapeAttr(placeHref)}">${escapeHtml(item.title)}</a>`
     : escapeHtml(item.title);

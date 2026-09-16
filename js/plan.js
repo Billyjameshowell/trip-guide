@@ -122,7 +122,7 @@ function comingSoonCard(block) {
 
 function slotHref(slot) {
   if (slot.href) return slot.href;
-  if (slot.placeId) return `index.html#${slot.placeId}`;
+  if (slot.placeId) return `/#${slot.placeId}`;
   return "";
 }
 
